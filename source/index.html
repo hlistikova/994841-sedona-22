@@ -4,9 +4,149 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotyle-mobile.svg" width="102" height="84" alt="логотип Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toogle" type="button">
+          <span class="visually-hidden">открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <div class="main-nav__list site-list">
+            <div class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </div>
+            <div class="site-list__item">
+              <a>
+                Фото и видео
+              </a>
+            </div>
+            <div class="site-list__item">
+              <a>
+                Форма отзыва
+              </a>
+            </div>
+            <div class="site-list__item">
+              <a>
+                HTML Academy
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      <section class="intro">
+        <div class="intro__wrapper">
+          <div class="intro-image">
+            <img src="img/text-index.svg" alt="welcome">
+          </div>
+        </div>
+      </section>
 
+      <section class="about">
+        <div class="about__wrapper">
+          <div class="about-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!<br>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
+        </div>
+
+        <div class="reasons">
+          <div class="reasons-list">
+            <div class="reasons-item">
+              <div class="reasons-item__title">Настоящий городок</div>
+              <span class="reasons-item__number">— №1 —</span>
+              <div class="reasons-item__desc">Седона не аттракцион для туристов, там течет своя жизнь</div>
+            </div>
+            <div class="reasons-item">
+              <div class="reasons-item__title">Там есть мост дьявола</div>
+              <span class="reasons-item__number">— №2 —</span>
+              <div class="reasons-item__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+            </div>
+
+            <div class="features">
+              <div class="features-list">
+                <div class="features-item">
+                  <img class="features-item__img" src="" alt="Дом">
+                  <div class="features-item__title">Жилье</div>
+                  <div class="features-item__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+                </div>
+                <div class="features-item">
+                  <img class="features-item__img" src="" alt="Подарок">
+                  <div class="features-item__title">Сувениры</div>
+                  <div class="features-item__desc">Не только китайского, но и местного производства!</div>
+                </div>
+                <div class="features-item">
+                  <img class="features-item__img" src="" alt="Бургер">
+                  <div class="features-item__title">Еда</div>
+                  <div class="features-item__desc">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reasons-item">
+              <div class="reasons-item__title">Небольшая площадь</div>
+              <span class="reasons-item__number">— №3 —</span>
+              <div class="reasons-item__desc">Все интересные места находятся очень близко</div>
+            </div>
+            <div class="reasons-item">
+              <div class="reasons-item__title">Красивая дорога</div>
+              <span class="reasons-item__number">— №4 —</span>
+              <div class="reasons-item__desc">Ехать в Седону из лас-вегаса совсем не скучно!</div>
+
+            </div>
+            <div class="reasons-item">
+              <div class="reasons-item__title">Мало туристов</div>
+              <span class="reasons-item__number">— №5 —</span>
+              <div class="reasons-item__desc">Большинство едет в гранд каньон и толпится там</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer">
+        <div class="offer-title">Заинтересовались?</div>
+        <div class="offer-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</div>
+        <a class="button offer_find"  href="">Найти гостиницу</a>
+      </section>
+
+      <section class="map">
+        <img src="" alt="здесь будет карта">
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__hashtag">
+          <b>#visitsedona</b>
+        </div>
+
+        <div class="page-footer__social social">
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+
+      </div>
+    </footer>
   </body>
 </html>
