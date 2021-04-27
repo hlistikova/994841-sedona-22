@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logotyle-mobile.svg" width="102" height="84" alt="логотип Седона">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
@@ -19,6 +20,9 @@
               <a>
                 Главная
               </a>
+              <button class="site-list__toogle" type="button">
+                <span class="visually-hidden">закрыть меню</span>
+              </button>
             </div>
             <div class="site-list__item">
               <a>
@@ -44,9 +48,10 @@
 
       <section class="intro intro-index">
         <div class="intro__wrapper">
-          <div class="intro-image">
+          <div class="intro-text">
             <img src="img/text-index.svg" alt="welcome">
           </div>
+          <div class="intro-triangle"></div>
         </div>
       </section>
 
@@ -54,6 +59,7 @@
         <div class="about__wrapper">
           <div class="about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</div>
           <div class="about-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
+          <div class="about-triangle"></div>
         </div>
 
         <div class="reasons">
@@ -62,31 +68,34 @@
               <div class="reasons-item__title">Настоящий городок</div>
               <span class="reasons-item__number">— №1 —</span>
               <div class="reasons-item__desc">Седона не аттракцион для туристов, там течет своя жизнь</div>
-            </div>
-            <div class="reasons-item">
-              <div class="reasons-item__title">Там есть мост дьявола</div>
-              <span class="reasons-item__number">— №2 —</span>
-              <div class="reasons-item__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+              <div class="reasons-item__img"></div>
             </div>
 
             <div class="features">
               <div class="features-list">
                 <div class="features-item">
-                  <img class="features-item__img" src="" alt="Дом">
+                  <div class="features-item__img"></div>
                   <div class="features-item__title">Жилье</div>
                   <div class="features-item__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
                 </div>
                 <div class="features-item">
-                  <img class="features-item__img" src="" alt="Подарок">
+                  <div class="features-item__img"></div>
                   <div class="features-item__title">Сувениры</div>
                   <div class="features-item__desc">Не только китайского, но и местного производства!</div>
                 </div>
                 <div class="features-item">
-                  <img class="features-item__img" src="" alt="Бургер">
+                  <div class="features-item__img"></div>
                   <div class="features-item__title">Еда</div>
                   <div class="features-item__desc">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</div>
                 </div>
               </div>
+            </div>
+
+            <div class="reasons-item">
+              <div class="reasons-item__title">Там есть мост дьявола</div>
+              <span class="reasons-item__number">— №2 —</span>
+              <div class="reasons-item__desc">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+              <div class="reasons-item__img"></div>
             </div>
 
             <div class="reasons-item">
@@ -112,32 +121,33 @@
       <section class="offer">
         <div class="offer-title">Заинтересовались?</div>
         <div class="offer-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</div>
-        <a class="button offer_find"  href="">Найти гостиницу</a>
+        <a class="button offer__find"  href="#">Найти гостиницу</a>
       </section>
 
       <section class="map">
-        <img src="" alt="здесь будет карта">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUYrWc6KD"></iframe>
       </section>
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+
         <div class="page-footer__hashtag">
           <b>#visitsedona</b>
         </div>
 
         <div class="page-footer__social social">
-          <b class="social__title">Давайте дружить!</b>
+          <b class="social__title visually-hidden">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
             </li>
           </ul>
         </div>
