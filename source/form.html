@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logotyle-mobile.svg" width="102" height="84" alt="логотип Седона">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
@@ -19,6 +21,9 @@
               <a href="index.html">
                 Главная
               </a>
+              <button class="site-list__toogle" type="button">
+                <span class="visually-hidden">закрыть меню</span>
+              </button>
             </div>
             <div class="site-list__item">
               <a href="catalog.html">
@@ -44,9 +49,10 @@
 
       <section class="intro intro-form">
         <div class="intro__wrapper">
-          <div class="intro-image">
-            <img src="img/text-index.svg" alt="welcome">
+          <div class="intro-logo">
+            <img src="img/intro-logo.svg" alt="welcome">
           </div>
+          <div class="intro-triangle"></div>
         </div>
       </section>
 
@@ -60,7 +66,7 @@
       <form class="form-form" action="https://echo.htmlacademy.ru" method="post">
         <section class="fullname">
           <div class="fullname__wrapper">
-            <div class="fullname-title">Представьтесь:</div>
+            <div class="form-title fullname-title">Представьтесь:</div>
             <!-- <form class="fullname-form" action="https://echo.htmlacademy.ru" method="post" > -->
                   <p class="fullname-item">
                     <label class="fullname-name" for="name-id">Имя<sup>*</sup>:</label>
@@ -80,7 +86,7 @@
 
         <section class="contacts">
           <div class="contacts__wrapper">
-            <div class="contacts-title">Контактная информация:</div>
+            <div class="form-title contacts-title">Контактная информация:</div>
             <!-- <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post" > -->
               <p class="contacts-item">
                 <label class="order-name" for="name-id">Контактный телефон<sup>*</sup>:</label>
@@ -97,7 +103,7 @@
         <section class="impression">
           <div class="impression__wrapper">
             <fieldset>
-              <legend class="impression-title">Ваше общее впечатление:</legend>
+              <legend class="form-title impression-title">Ваше общее впечатление:</legend>
                 <ul class="impression-list">
                   <li class="impression-item">
                     <input class="impression-item-input hide" type="radio" name="impression-group" value="positive" id="impression-positive" checked>
@@ -109,7 +115,7 @@
                   </li>
                   <li class="impression-item">
                     <input class="impression-item-input hide" type="radio" name="impression-group" value="neutral" id="impression-neutral">
-                      <label for="impression-neutral">Затрудняюсь ответит</label>
+                      <label for="impression-neutral">Затрудняюсь ответить</label>
                 </ul>
             </fieldset>
           </div>
@@ -118,7 +124,7 @@
         <section class="attractions">
           <div class="attractions__wrapper">
             <fieldset>
-              <legend class="attractions-title">Посещенные достопримечательности:</legend>
+              <legend class="form-title attractions-title">Посещенные достопримечательности:</legend>
                 <ul class="attractions-list">
                   <li class="attractions-item">
                     <input class="attractions-item-input hide" type="checkbox" name="attractions-group" id="bridge" checked>
@@ -144,11 +150,11 @@
         <section class="review">
           <div class="review__wrapper">
             <!-- <form class="review-form" action="https://echo.htmlacademy.ru" method="post" > -->
-              <p class="review-item">
-                <label class="review-title" for="text-id">Опишите свои эмоции:</label>
+              <div class="review-item">
+                <label class="form-title review-title" for="text-id">Опишите свои эмоции:</label>
                 <textarea id="text-id" name="text" placeholder="Опишите подробно все свои восторги" ></textarea>
-              </p>
-              <button class="button send-review" type="submit">Отправить отзыв</button>
+              </div>
+              <button class="button review-send" type="submit">Отправить отзыв</button>
             <!-- </form> -->
           </div>
         </section>
@@ -162,23 +168,23 @@
         </div>
 
         <div class="page-footer__social social">
-          <b class="social__title">Давайте дружить!</b>
+          <b class="social__title visually-hidden">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
             </li>
           </ul>
         </div>
 
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
         </div>
 
       </div>

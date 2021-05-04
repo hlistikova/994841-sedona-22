@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logotyle-mobile.svg" width="102" height="84" alt="логотип Седона">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
@@ -19,14 +21,17 @@
               <a href="index.html">
                 Главная
               </a>
+              <button class="site-list__toogle" type="button">
+                <span class="visually-hidden">закрыть меню</span>
+              </button>
             </div>
             <div class="site-list__item">
-              <a href="catalog.html">
+              <a>
                 Фото и видео
               </a>
             </div>
             <div class="site-list__item">
-              <a>
+              <a href="form.html">
                 Форма отзыва
               </a>
             </div>
@@ -45,8 +50,8 @@
 
       <section class="intro intro-form">
         <div class="intro__wrapper">
-          <div class="intro-image">
-            <img src="img/text-index.svg" alt="welcome">
+          <div class="intro-logo">
+            <img src="img/intro-logo.svg" alt="welcome">
           </div>
         </div>
       </section>
@@ -121,8 +126,8 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
         </div>
 
       </div>
