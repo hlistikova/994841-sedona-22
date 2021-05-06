@@ -1,5 +1,19 @@
 .about{
   text-transform: uppercase;
+  width: 285px;
+  height: 162px;
+  margin: 0;
+  text-align: center;
+    @media (min-width: @tablet-width) {
+      padding: 44px 64px 0;
+      width: 520px;
+      height: 110px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 auto;
+      max-width: 520px;
+    }
 }
 
 .about-title{
@@ -8,7 +22,9 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
 }
+
 .about-text{
   font-family: PT Sans;
   font-style: normal;
@@ -16,4 +32,6 @@
   font-size: 14px;
   line-height: 26px;
   color: @dark-grey;
+  margin: 0;
 }
+
