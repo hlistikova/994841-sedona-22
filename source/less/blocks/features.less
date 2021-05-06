@@ -1,3 +1,24 @@
+.features-list{
+  @media (min-width: @tablet-width){
+    display: flex;
+    flex-direction: row;
+  }
+}
+.features-item{
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 35px auto 40px;
+    @media (min-width: @tablet-width){
+      height: 256px;
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+    }
+}
+
 .features-item__title{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;

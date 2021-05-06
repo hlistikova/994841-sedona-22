@@ -2,8 +2,27 @@
   background-color: @grey;
 }
 
-.reasons-item:nth-child(1), .reasons-item:nth-child(3){
+.reasons-item__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.reasons{
+  @media (min-width: @tablet-width){
+    height: 256px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+.reasons-img .reasons-item {
   background-color: @blue-main;
+    @media (min-width: @tablet-width){
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 }
 
 .reasons-item:nth-child(1) .reasons-item__img{

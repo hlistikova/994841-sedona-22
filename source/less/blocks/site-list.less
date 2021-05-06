@@ -9,6 +9,16 @@
       color: @white;
       text-decoration: none;
     }
+    @media (min-width: @tablet-width){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      background-color: @white;
+        a{
+        color: @black;
+        }
+    }
 }
 
 .site-list__item{
@@ -17,6 +27,9 @@
   text-align: center;
   display: flex;
   align-items: center;
+    @media (min-width: @tablet-width){
+      box-shadow: none;
+    }
 }
 
 .site-list__toogle{
@@ -25,4 +38,7 @@
   width: 22px;
   height: 22px;
   border: none;
+    @media (min-width: @tablet-width){
+      display: none;
+    }
 }
