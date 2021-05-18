@@ -1,15 +1,45 @@
 .attractions-list{
   list-style: none;
+  margin-bottom: 51px;
+
+    @media (min-width: @tablet-width){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      width: 484px;
+      margin: 0 auto 76px;
+    }
+
+    @media (min-width: @desktop-width){
+      width: 987px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      margin-bottom: 74px;
+    }
 }
 
+.attractions-title{
+  text-align: center;
+  margin-bottom: 25px;
+    @media (min-width: @tablet-width){
+      margin-bottom: 48px;
+    }
+}
+
+
 .attractions-item label{
-font-family: "PT Sans", "Arial", sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .attractions fieldset{
   border: none;
+  margin: 0;
+  padding: 0;
 }

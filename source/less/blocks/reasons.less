@@ -1,12 +1,29 @@
 .reasons-item{
   background-color: @grey;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .reasons-item__wrapper{
+  text-align: center;
   display: flex;
   flex-direction: column;
-}
+  justify-content: space-around;
 
+  width: 320px;
+  height: 191px;
+  @media (min-width: @tablet-width){
+    width: 256px;
+    height: 256px;
+
+  }
+  @media (min-width: @desktop-width){
+    width: 400px;
+  }
+}
 
 .reasons{
   @media (min-width: @tablet-width){
@@ -17,6 +34,7 @@
 }
 .reasons-img .reasons-item {
   background-color: @blue-main;
+
     @media (min-width: @tablet-width){
       display: flex;
       align-items: center;
@@ -30,6 +48,7 @@
   background-repeat: no-repeat;
   width: 520px;
   height: 260px;
+
 }
 
 .reasons-item:nth-child(3) .reasons-item__img{

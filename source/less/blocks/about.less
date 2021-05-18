@@ -1,19 +1,16 @@
 .about{
   text-transform: uppercase;
-  width: 285px;
-  height: 162px;
-  margin: 0;
+  margin: 0 auto;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+}
+.about__wrapper{
   text-align: center;
-    @media (min-width: @tablet-width) {
-      padding: 44px 64px 0;
-      width: 520px;
-      height: 110px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin: 0 auto;
-      max-width: 520px;
-    }
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-title{
@@ -22,7 +19,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  margin: 0;
+  // margin: 0;
 }
 
 .about-text{
@@ -32,6 +29,40 @@
   font-size: 14px;
   line-height: 26px;
   color: @dark-grey;
-  margin: 0;
+  // margin: 0;
 }
 
+.about-index{
+  width: 285px;
+  height: 162px;
+    @media (min-width: @tablet-width) {
+      width: 520px;
+      height: 110px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 483px;
+      height: 110px;
+    }
+}
+
+.about-form{
+  width: 306px;
+  height: 151px;
+    @media (min-width: @tablet-width) {
+      // padding: 44px 64px 0;
+      width: 434px;
+      height: 129px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 434px;
+      height: 129px;
+    }
+}
+
+.about-triangle{
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

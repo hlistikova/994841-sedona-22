@@ -1,5 +1,13 @@
-.order-name,
-.order-email{
+.contacts-item{
+  display: flex;
+  flex-direction: column;
+    @media (min-width: @tablet-width){
+      flex-direction: row;
+    }
+}
+
+.contacts-name,
+.contacts-email{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -21,4 +29,34 @@
   font-size: 18px;
   line-height: 26px;
   color: @black;
+}
+
+.contacts-title{
+  text-align: center;
+  margin: 20px auto 17px;
+    @media (min-width: @tablet-width){
+      margin: 20px auto 21px;
+    }
+    @media (min-width: @desktop-width){
+      margin: 20px auto 72px;
+    }
+}
+
+.contacts-list{
+  margin-bottom: 28px;
+    @media (min-width: @tablet-width){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 52px;
+    }
+    @media (min-width: @desktop-width){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+}
+
+.contacts{
+  width: 100%;
 }

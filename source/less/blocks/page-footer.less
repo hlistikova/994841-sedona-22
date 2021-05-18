@@ -1,3 +1,22 @@
+.page-footer__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 151px;
+  height: 233px;
+  margin: auto;
+    @media (min-width: @tablet-width){
+      flex-direction: row;
+      width: 648px;
+      height: 120px;
+    }
+    @media (min-width: @desktop-width){
+      flex-direction: row;
+      width: 960px;
+    }
+}
+
 .page-footer__hashtag{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
