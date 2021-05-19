@@ -24,3 +24,32 @@
   font-size: 14px;
   line-height: 24px;
 }
+
+.gallery__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 59px auto 0;
+    @media (min-width: @tablet-width){
+      width: 648px;
+    }
+
+    @media (min-width: @desktop-width){
+      width: 1201px;
+    }
+}
+
+.gallery__wrapper__first{
+  width: 100%;
+}
+
+.gallery__wrapper__secondary{
+  @media (min-width: @tablet-width){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (min-width: @desktop-width){
+    width: 987px;
+  }
+}
