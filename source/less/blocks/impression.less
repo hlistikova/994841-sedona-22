@@ -1,5 +1,12 @@
 .impression-list{
     list-style: none;
+    // @media (min-width: @tablet-width){
+    //   width: 303px;
+    // }
+
+    // @media (min-width: @desktop-width){
+    //   width: 344px;
+    // }
 }
 
 .impression-item label{
@@ -12,4 +19,12 @@
 
 .impression fieldset{
   border: none;
+}
+
+.impression{
+  width: 100%;
+  @media (min-width: @tablet-width){
+    width: 50%;
+    order: -3;
+  }
 }
