@@ -6,19 +6,18 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
+  <body class="page__body main-nav--opened">
+    <header class="page-header ">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+      <button class="main-nav__toogle" type="button">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+      <nav class="main-nav  main-nav--nojs">
           <div class="main-nav__list site-list">
             <div class="site-list__item site-list__item--active">
-              <a>
+              <a href="blank.html">
                 Главная
               </a>
               <button class="site-list__toogle" type="button">
@@ -36,13 +35,12 @@
               </a>
             </div>
             <div class="site-list__item">
-              <a>
+              <a href="blank.html">
                 HTML Academy
               </a>
             </div>
           </div>
-        </div>
-      </nav>
+    </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
@@ -50,31 +48,35 @@
       <section class="intro intro-index">
         <div class="intro__wrapper">
           <div class="intro-text">
-
+            <img src="img/intro-text.svg" width="282px" height="214px" alt="интро седона">
           </div>
-          <div class="intro-triangle"></div>
+          <!-- <img src="img/intro-triangle.svg" width="1200px" height="57px" alt="интро седона"> -->
         </div>
+
       </section>
 
       <section class="about about-index">
         <div class="about__wrapper">
           <div class="about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</div>
           <div class="about-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</div>
+
           <div class="about-triangle"></div>
         </div>
       </section>
 
       <section class="reasons reasons-img">
-        <div>
+        <!-- <div> -->
           <div class="reasons-item">
               <div class="reasons-item__wrapper">
                 <div class="reasons-item__title">Настоящий городок</div>
                 <span class="reasons-item__desc">— №1 —</span>
                 <div class="reasons-item__desc">Седона не аттракцион для туристов, там течет своя жизнь</div>
               </div>
-              <div class="reasons-item__img"></div>
+              <div class="reasons-item__img">
+                <img src="img/photo-city.jpg" width="800px" height="256px" alt="фото города">
+              </div>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="features">
@@ -101,7 +103,9 @@
 
       <section class="reasons reasons-img">
             <div class="reasons-item">
-              <div class="reasons-item__img"></div>
+              <div class="reasons-item__img">
+                <img src="img/photo-bridge.jpg" alt="фото моста" width="800px" height="256px" >
+              </div>
               <div class="reasons-item__wrapper">
                 <div class="reasons-item__title">Там есть мост дьявола</div>
                 <span class="reasons-item__desc">— №2 —</span>
@@ -110,7 +114,7 @@
             </div>
       </section>
 
-      <section class="reasons">
+      <section class="reasons reasons_list">
            <div class="reasons-item">
               <div class="reasons-item__title">Небольшая площадь</div>
               <span class="reasons-item__desc">— №3 —</span>
@@ -127,14 +131,14 @@
               <span class="reasons-item__desc">— №5 —</span>
               <div class="reasons-item__desc">Большинство едет в гранд каньон и толпится там</div>
             </div>
-          </div>
+
         </div>
       </section>
 
       <section class="offer">
         <div class="offer-title">Заинтересовались?</div>
-        <div class="offer-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</div>
-        <a class="button offer__find"  href="#">Найти гостиницу</a>
+        <div class="offer-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</div>
+        <a class="offer__find button"  href="blank.html" >Найти гостиницу</a>
       </section>
 
       <section class="map">
