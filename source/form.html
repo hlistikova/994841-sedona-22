@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
-  <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo">
+  <body class="page__body main-nav--opened">
+    <header class="page-header ">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="логотип Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
-          <span class="visually-hidden">открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+      <button class="main-nav__toogle" type="button">
+        <span class="visually-hidden">открыть меню</span>
+      </button>
+      <nav class="main-nav  main-nav--nojs">
           <div class="main-nav__list site-list">
             <div class="site-list__item site-list__item--active">
-              <a href="index.html">
+              <a href="blank.html">
                 Главная
               </a>
-              <button class="site-list__toogle" type="button">
+              <!-- <button class="site-list__toogle" type="button">
                 <span class="visually-hidden">закрыть меню</span>
-              </button>
+              </button> -->
             </div>
             <div class="site-list__item">
               <a href="catalog.html">
@@ -31,29 +30,26 @@
               </a>
             </div>
             <div class="site-list__item">
-              <a>
+              <a href="form.html">
                 Форма отзыва
               </a>
             </div>
             <div class="site-list__item">
-              <a>
+              <a href="blank.html">
                 HTML Academy
               </a>
             </div>
           </div>
-        </div>
-      </nav>
+    </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
 
       <section class="intro intro-form">
-        <div class="intro__wrapper">
           <div class="intro-logo">
-            <!-- <img src ="img/intro-logo.svg" alt="welcome"> -->
+            <img src ="img/intro-logo.svg" alt="welcome">
           </div>
           <div class="intro-triangle"></div>
-        </div>
       </section>
 
       <section class="about about-form">
