@@ -9,32 +9,36 @@
 
 .reasons-item__wrapper{
   text-align: center;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 
   width: 320px;
   height: 191px;
   @media (min-width: @tablet-width){
     width: 256px;
     height: 256px;
-
   }
+
   @media (min-width: @desktop-width){
     width: 400px;
   }
 }
 
 .reasons{
+  background-color: @grey;
   @media (min-width: @tablet-width){
     height: 256px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .reasons-img .reasons-item {
   background-color: @blue-main;
-
+  color: @white;
     @media (min-width: @tablet-width){
       display: flex;
       align-items: center;
@@ -43,19 +47,21 @@
     }
 }
 
-.reasons-item:nth-child(1) .reasons-item__img{
-  background-image: url(../img/photo-city-index.jpg);
-  background-repeat: no-repeat;
-  width: 520px;
+.reasons-img img{
+  width: 100%;
+  object-fit: cover;
   height: 260px;
+    @media (min-width: @tablet-width){
+      height: 256px;
+    }
 
 }
 
-.reasons-item:nth-child(3) .reasons-item__img{
-  background-image: url(../img/photo-bridge-index.jpg);
-  background-repeat: no-repeat;
-  width: 520px;
-  height: 260px;
+.reasons_list{
+  @media (min-width: @tablet-width){
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .reasons-item__title{
