@@ -42,10 +42,24 @@
 }
 
 .intro-logo{
-  background-image: url(../img/intro-logo.svg);
-  background-repeat: no-repeat;
+  // background-image: url(../img/intro-logo.svg);
+  // background-repeat: no-repeat;
   width: 229px;
   height: 39px;
+  margin: 0 auto 0;
+  padding-top: 52px;
+
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+    @media (min-width: @tablet-width){
+      width: 461px;
+      height: 80px;
+      padding-top: 72px;
+      // height: 350px;
+    }
 }
 
 
