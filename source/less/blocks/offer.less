@@ -1,17 +1,18 @@
 .offer{
   text-align: center;
-  padding-top: 33px;
-  margin: 0 auto;
+  // padding-top: 33px;
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   @media (min-width: @tablet-width) {
-    padding: 58px 78px 0;
-    max-width: 520px;
+    // padding: 58px 78px 0;
+    // max-width: 520px;
   }
 }
 
-.offer-title{
+.offer__title{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -19,7 +20,7 @@
   line-height: 26px;
 }
 
-.offer-text{
+.offer__text{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -27,8 +28,10 @@
   line-height: 24px;
   margin-top: 20px;
   margin-bottom: 27px;
+  width: 260px;
     @media (min-width: @tablet-width) {
       margin-bottom: 37px;
+      width: 435px;
     }
 
     @media (min-width: @desktop-width) {
@@ -36,7 +39,7 @@
     }
 }
 
-.offer a{
+.offer__button{
   width: 280px;
   height: 58px;
     @media (min-width: @tablet-width) {

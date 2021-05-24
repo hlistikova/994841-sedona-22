@@ -1,29 +1,54 @@
-.features-list{
+.features{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 416px;
-  @media (min-width: @tablet-width){
-    height: 256px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-.features-item{
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  padding: 35px auto 40px;
+  padding-top: 30px;
+
     @media (min-width: @tablet-width){
+      padding-top: 0px;
       height: 256px;
-      // width: 33%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+ }
+.features-item{
+  position: relative;
+  display: block;
+
+  text-align: left;
+  min-height: initial;
+  // width: 100%;
+  padding-left: 60px;
+
+    @media (min-width: @tablet-width){
+      padding-left: 0;
+      width: 33.333333%;
+      // min-height: 256px;
+      height: 100%;
+      min-height: 330px;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+}
+
+.features-item__img{
+  @media (max-width: @mobile-width-only){
+    position: absolute;
+    left: 20px;
+  }
+
+  img{
+    @media (min-width: @tablet-width){
+      padding-top: 45px;
+      width: 75px;
+      height: 72px;
     }
   }
+}
 
 .features-item__title{
   font-family: "PT Sans", "Arial", sans-serif;
@@ -31,6 +56,12 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  padding: 15px;
+  max-width: initial;
+
+    @media (max-width: @tablet-width){
+      max-width: 200px;
+    }
 }
 
 .features-item__desc{
@@ -39,25 +70,16 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  padding: 15px;
+  max-width: initial;
+
+    @media (max-width: @tablet-width){
+      max-width: 200px;
+    }
 }
 
-.features-item:nth-child(1) .features-item__img{
-  background-image: url(../img/icon-house.svg);
-  background-color: @white;
-  width: 39px;
-  height: 37px;
-}
-
-.features-item:nth-child(2) .features-item__img{
-  background-image: url(../img/icon-gift.svg);
-  background-color: @white;
-  width: 32px;
-  height: 38px;
-}
-
-.features-item:nth-child(3) .features-item__img{
-  background-image: url(../img/icon-burger.svg);
-  background-color: @white;
-  width: 40px;
-  height: 35px;
+.features-item:nth-child(2){
+  @media (min-width: @tablet-width){
+    order: 2;
+  }
 }

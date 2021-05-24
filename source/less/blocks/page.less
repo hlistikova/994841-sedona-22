@@ -12,5 +12,15 @@
 .page__body{
   min-width: 320px;
   min-height: 100%;
+  background-color: @grey-wrap;
+}
+
+.page__wrapper{
   background-color: @white;
+    @media (min-width: @desktop-width){
+      width: 100%;
+      min-width: 320px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 }
