@@ -1,9 +1,51 @@
-.contacts-item{
+.contacts{
+  // width: 280px;
+  width: 100%;
+}
+
+.contacts__list{
+  margin-bottom: 28px;
   display: flex;
   flex-direction: column;
-    @media (min-width: @tablet-width){
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width){
+    margin-bottom: 52px;
+
+  }
+
+  @media (min-width: @desktop-width){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+.contacts__item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+    @media (min-width: @desktop-width){
       flex-direction: row;
     }
+
+    &:before{
+      content: "";
+      width: 58px;
+      height: 58px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      background-color: @grey-contacts;
+      background-image: url(../img/phone.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 18px 18px;
+    }
+
 }
 
 .contacts-name,
@@ -16,13 +58,20 @@
   text-transform: uppercase;
 }
 
-.contacts-item input{
+.contacts__item input{
   width: 230px;
+  // width: 100%;
   height: 58px;
   background-color: @form-grey;
   border: none;
+    @media (min-width: @tablet-width){
+      width: 648px;
+    }
+    @media (min-width: @desktop-width){
+      width: 257px;
+    }
 }
-.contacts-item ::placeholder{
+.contacts__item ::placeholder{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -42,21 +91,4 @@
     }
 }
 
-.contacts-list{
-  margin-bottom: 28px;
-    @media (min-width: @tablet-width){
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-bottom: 52px;
-    }
-    @media (min-width: @desktop-width){
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-}
 
-.contacts{
-  width: 100%;
-}

@@ -1,4 +1,89 @@
-.gallery_item--title{
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // margin: 59px auto 0;
+  padding: 0 20px;
+    @media (min-width: @tablet-width){
+      min-width: 648px;
+      // width: 100%;
+      padding: 0 60px;
+    }
+
+    @media (min-width: @desktop-width){
+      width: 1200px;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+// .gallery__wrapper{
+//   width: 100%;
+//   @media (min-width: @tablet-width){
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//   }
+//   @media (min-width: @desktop-width){
+//     flex-wrap: nowrap;
+//     width: 1200px;
+//   }
+// }
+
+.gallery__item{
+  width: 100%;
+    @media (min-width: @tablet-width){
+      width: 50%;
+    }
+    @media (min-width: @desktop-width){
+      width: 33.333333%;
+    }
+  img{
+    height: 280px;
+    @media (min-width: @tablet-width){
+      height: 267px;
+    }
+  }
+}
+.gallery__item:nth-child(1){
+  width: 100%;
+    img{
+      @media (min-width: @tablet-width){
+        height: 400px;
+      }
+  }
+}
+
+.gallery__item{
+  position: relative;
+    &--info{
+    width: 100%;
+    z-index: 2;
+
+    @media (min-width: @tablet-width){
+      height: 80px;
+      position: absolute;
+      bottom: -80px;
+      left: 0;
+      right: 0;
+      background-color: @grey-catalog;
+    }
+    @media (min-width: @desktop-width){
+      bottom: 0;
+      background-color: @black;
+      // opacity: .3;
+      color: @white;
+    }
+}
+}
+
+.gallery__item--title{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -7,7 +92,7 @@
   text-transform: uppercase;
 }
 
-.gallery_item--autor{
+.gallery__item--autor{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -17,7 +102,7 @@
 
 }
 
-.gallery_item-like{
+.gallery__item--like{
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -25,31 +110,5 @@
   line-height: 24px;
 }
 
-.gallery__wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 59px auto 0;
-    @media (min-width: @tablet-width){
-      width: 648px;
-    }
 
-    @media (min-width: @desktop-width){
-      width: 1201px;
-    }
-}
 
-.gallery__wrapper__first{
-  width: 100%;
-}
-
-.gallery__wrapper__secondary{
-  @media (min-width: @tablet-width){
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  @media (min-width: @desktop-width){
-    width: 987px;
-  }
-}
