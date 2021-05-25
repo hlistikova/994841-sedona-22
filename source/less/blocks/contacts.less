@@ -64,11 +64,24 @@
   height: 58px;
   background-color: @form-grey;
   border: none;
+  outline: none;
+
     @media (min-width: @tablet-width){
       width: 648px;
     }
     @media (min-width: @desktop-width){
       width: 257px;
+    }
+    &:hover,
+    &:focus {
+      background-color: @grey-disabled;
+    }
+
+    &:active {
+      background-color: @white;
+      border: 4px solid @grey-disabled;
+      box-sizing: border-box;
+
     }
 }
 .contacts__item ::placeholder{

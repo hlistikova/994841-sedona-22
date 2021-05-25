@@ -13,4 +13,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover,
+  &:focus {
+    color: @white;
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    color: @grey-hover;
+    // opacity: .3;
+    background-color: @blue-down;
+  }
+
+  &:disabled{
+    background-color: @grey-disabled;
+    color: @white;
+  }
 }

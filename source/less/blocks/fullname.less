@@ -35,6 +35,18 @@
   height: 58px;
   background-color: @form-grey;
   border: none;
+  outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: @grey-disabled;
+    }
+
+    &:active {
+      background-color: @white;
+      border: 4px solid @grey-disabled;
+      box-sizing: border-box;
+    }
 }
 // .fullname__item:nth-child(1) input{
 //   max-width: 350px;
