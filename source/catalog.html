@@ -24,12 +24,12 @@
         </button>
         <nav class="main-nav  main-nav--nojs">
             <div class="main-nav__list site-list">
-              <div class="site-list__item site-list__item--active">
+              <div class="site-list__item">
                 <a href="index.html">
                   Главная
                 </a>
               </div>
-              <div class="site-list__item">
+              <div class="site-list__item site-list__item--active">
                 <a href="catalog.html">
                   Фото и видео
                 </a>
@@ -74,9 +74,11 @@
                 <img src="img/catalog-photo-1-mobile.jpg" srcset="img/catalog-photo-1-mobile@2x.jpg 2x" alt="фото неродных просторов" width="800px" height="256px" >
               </picture>
               <div class="gallery__item--info">
+                <div class="gallery__item--info--wrap">
                 <p class="gallery__item--title">Неродные просторы</p>
                 <p class="gallery__item--autor">Автор фото: Борис</p>
-                <span class="gallery_item--like">1350</span>
+                </div>
+                <span class="gallery__item--like">1350</span>
               </div>
             </div>
 
@@ -89,9 +91,11 @@
                 <img src="img/catalog-photo-2-mobile.jpg" srcset="img/catalog-photo-2-mobile@2x.jpg 2x" alt="фото местной растительности" width="800px" height="256px" >
               </picture>
               <div class="gallery__item--info">
-                <p class="gallery__item--title">Местная растительность</p>
-                <p class="gallery__item--autor">Автор фото: Сергей</p>
-                <span class="gallery_item--like">143</span>
+                <div class="gallery__item--info--wrap">
+                  <p class="gallery__item--title">Местная растительность</p>
+                  <p class="gallery__item--autor">Автор фото: Сергей</p>
+                </div>
+                <span class="gallery__item--like">143</span>
               </div>
             </div>
 
@@ -102,8 +106,10 @@
                 <img src="img/catalog-photo-3-mobile.jpg" srcset="img/catalog-photo-3-mobile@2x.jpg 2x" alt="фото дорога на север" width="800px" height="256px" >
               </picture>
               <div class="gallery__item--info">
-                <p class="gallery__item--title">Дорога на север</p>
-                <p class="gallery__item--autor">Автор фото: Петр</p>
+                <div class="gallery__item--info--wrap">
+                  <p class="gallery__item--title">Дорога на север</p>
+                  <p class="gallery__item--autor">Автор фото: Петр</p>
+                </div>
                 <span class="gallery__item--like">96</span>
               </div>
             </div>
@@ -115,8 +121,10 @@
                 <img src="img/catalog-photo-4-mobile.jpg" srcset="img/catalog-photo-4-mobile@2x.jpg 2x" alt="фото мост дьявола" width="800px" height="256px" >
               </picture>
               <div class="gallery__item--info">
-                <p class="gallery__item--title">Мост дьявола</p>
-                <p class="gallery__item--autor">Автор фото: Антон</p>
+                <div class="gallery__item--info--wrap">
+                  <p class="gallery__item--title">Мост дьявола</p>
+                  <p class="gallery__item--autor">Автор фото: Антон</p>
+                </div>
                 <span class="gallery__item--like">254</span>
               </div>
             </div>
@@ -129,7 +137,7 @@
           <div class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</div>
           <div class="video__image">
             <img src="img/catalog-video.jpg" alt="картинка видеопрезентация">
-            <!-- <div class="video__volume">
+            <div class="video__volume">
               <div class="video__volume-scale"></div>
               <div class="video__volume--slider"></div>
             </div>
@@ -137,7 +145,7 @@
               <div class="video__control--replay"></div>
               <div class="video__control--subtitles"></div>
               <div class="video__control--fullscreen"></div>
-            </div> -->
+            </div>
 
           </div>
         </div>
