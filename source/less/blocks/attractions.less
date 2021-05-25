@@ -1,16 +1,21 @@
 .attractions__list{
+  min-height: 286px;
   margin-bottom: 51px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 225px;
+  margin: 0 auto;
 
     @media (min-width: @tablet-width){
+
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: space-between;
 
       width: 484px;
+      min-height: 134px;
       margin: 0 auto 76px;
     }
 
@@ -18,10 +23,71 @@
       width: 987px;
       display: flex;
       flex-wrap: nowrap;
-      justify-content: space-between;
 
       margin-bottom: 74px;
     }
+}
+.attractions__item{
+  position: relative;
+}
+
+.attractions__item input + label{
+  &:before{
+    content: "";
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    background-color: @form-grey;
+    border: 5px solid @form-grey;
+  }
+
+  &:hover,
+  &:focus {
+    &:before{
+    background-color: @grey-disabled;
+    border: 5px solid @grey-disabled;
+    }
+  }
+  &:active {
+    &:before{
+    opacity: .3;
+    border: 5px solid @grey-down;
+    }
+  }
+}
+
+.attractions__item input:checked + label{
+  &:before{
+    content: "";
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    background-color: @form-grey;
+    border: 5px solid @form-grey;
+    background-image: url(../img/tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 23px 16px;
+
+    &:hover,
+    &:focus {
+      &:before{
+      background-color: @grey-disabled;
+      border: 5px solid @grey-disabled;
+      }
+    }
+    &:active {
+      &:before{
+      opacity: .3;
+      border: 5px solid @grey-down;
+      }
+    }
+
+  }
 }
 
 .attractions__title{
@@ -39,6 +105,8 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+
+  padding-left: 60px;
 }
 
 .attractions fieldset{
