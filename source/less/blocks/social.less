@@ -10,8 +10,21 @@
   height: 48px;
   background-color: @blue-main;
   text-align: center;
+  line-height: 0;
 
   display: flex;
   justify-content: space-around;
   align-items: center;
+  &:hover,
+    &:focus {
+      background-color: @blue-hover;
+    }
+
+    &:active {
+      background-color: @blue-down;
+      svg{
+        opacity: .3;
+      }
+    }
 }
+
